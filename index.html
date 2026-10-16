@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PetAmigo: adoção responsável e cuidados com cães e gatos.">
+  <title>PetAmigo | Adoção e cuidados com animais</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+
+  <!-- ===== Cabeçalho ===== -->
+  <header class="cabecalho">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="PetAmigo - página inicial">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="32" cy="32" r="32" fill="#f28c28"/>
+          <ellipse cx="32" cy="42" rx="12" ry="10" fill="#fff"/>
+          <ellipse cx="17" cy="30" rx="5" ry="7" fill="#fff"/>
+          <ellipse cx="27" cy="20" rx="5" ry="7" fill="#fff"/>
+          <ellipse cx="37" cy="20" rx="5" ry="7" fill="#fff"/>
+          <ellipse cx="47" cy="30" rx="5" ry="7" fill="#fff"/>
+        </svg>
+        <strong>Pet<span>Amigo</span></strong>
+      </a>
+      <button class="btn-menu" id="btn-menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html" class="ativo">Início</a></li>
+          <li><a href="pages/adocao.html">Adoção</a></li>
+          <li><a href="pages/mapa.html">Mapa</a></li>
+          <li><a href="pages/galeria.html">Galeria</a></li>
+          <li><a href="pages/contato.html">Contato</a></li>
+          <li><a href="pages/entrar.html">Entrar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Banner ===== -->
+    <section class="hero">
+      <div class="container hero-conteudo">
+        <div class="hero-texto">
+          <h1>Adote um amigo e mude duas vidas</h1>
+          <p>Conectamos cães e gatos que procuram um lar com pessoas prontas para amar. Adoção responsável, simples e cheia de carinho.</p>
+          <div class="hero-botoes">
+            <a href="pages/adocao.html" class="btn btn-primario">Quero adotar</a>
+            <a href="pages/galeria.html" class="btn btn-secundario">Ver galeria</a>
+          </div>
+        </div>
+        <div class="hero-emoji" aria-hidden="true">🐶🐱</div>
+      </div>
+    </section>
+
+    <!-- ===== Animais em destaque ===== -->
+    <section>
+      <div class="container">
+        <h2 class="titulo-secao">Animais em destaque</h2>
+        <p class="subtitulo-secao">Eles estão esperando por você</p>
+
+        <div class="grade-cards">
+          <article class="card card-animal">
+            <div class="card-topo topo-laranja" aria-hidden="true">🐕</div>
+            <div class="card-corpo">
+              <span class="etiqueta">Cão</span>
+              <h3>Thor</h3>
+              <p>2 anos, porte médio, muito brincalhão.</p>
+              <a href="pages/adocao.html" class="link-card">Conhecer →</a>
+            </div>
+          </article>
+
+          <article class="card card-animal">
+            <div class="card-topo topo-azul" aria-hidden="true">🐈</div>
+            <div class="card-corpo">
+              <span class="etiqueta">Gato</span>
+              <h3>Mia</h3>
+              <p>1 ano, porte pequeno, dócil e carinhosa.</p>
+              <a href="pages/adocao.html" class="link-card">Conhecer →</a>
+            </div>
+          </article>
+
+          <article class="card card-animal">
+            <div class="card-topo topo-verde" aria-hidden="true">🐶</div>
+            <div class="card-corpo">
+              <span class="etiqueta">Cão</span>
+              <h3>Bolinha</h3>
+              <p>6 meses, porte pequeno, cheio de energia.</p>
+              <a href="pages/adocao.html" class="link-card">Conhecer →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Como adotar ===== -->
+    <section class="como-adotar">
+      <div class="container">
+        <h2 class="titulo-secao">Como adotar</h2>
+        <p class="subtitulo-secao">Três passos simples</p>
+
+        <div class="grade-cards">
+          <div class="passo">
+            <span class="passo-numero">1</span>
+            <h3>Escolha seu amigo</h3>
+            <p>Veja os animais disponíveis e filtre por tipo.</p>
+          </div>
+          <div class="passo">
+            <span class="passo-numero">2</span>
+            <h3>Crie sua conta</h3>
+            <p>Cadastre-se para manifestar interesse.</p>
+          </div>
+          <div class="passo">
+            <span class="passo-numero">3</span>
+            <h3>Fale com a gente</h3>
+            <p>Combinamos a visita e a entrega com carinho.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Rodapé ===== -->
+  <footer class="rodape">
+    <div class="container">
+      <p>&copy; 2026 PetAmigo. Projeto da disciplina Desenvolvimento Front-End para Web.</p>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>

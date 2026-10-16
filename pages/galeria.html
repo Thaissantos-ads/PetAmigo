@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galeria de fotos de cães e gatos do PetAmigo.">
+  <title>Galeria | PetAmigo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+<body>
+
+  <!-- ===== Cabeçalho ===== -->
+  <header class="cabecalho">
+    <div class="container">
+      <a href="../index.html" class="logo" aria-label="PetAmigo - página inicial">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="32" cy="32" r="32" fill="#f28c28"/>
+          <ellipse cx="32" cy="42" rx="12" ry="10" fill="#fff"/>
+          <ellipse cx="17" cy="30" rx="5" ry="7" fill="#fff"/>
+          <ellipse cx="27" cy="20" rx="5" ry="7" fill="#fff"/>
+          <ellipse cx="37" cy="20" rx="5" ry="7" fill="#fff"/>
+          <ellipse cx="47" cy="30" rx="5" ry="7" fill="#fff"/>
+        </svg>
+        <strong>Pet<span>Amigo</span></strong>
+      </a>
+      <button class="btn-menu" id="btn-menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <nav>
+        <ul class="menu">
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="adocao.html">Adoção</a></li>
+          <li><a href="mapa.html">Mapa</a></li>
+          <li><a href="galeria.html" class="ativo">Galeria</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="entrar.html">Entrar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="topo-pagina">
+      <div class="container">
+        <h1>Galeria de fotos</h1>
+        <p>Clique em uma foto para ampliar.</p>
+      </div>
+    </section>
+
+    <section class="area-galeria">
+      <div class="container">
+
+        <ul class="galeria" id="galeria">
+          <li>
+            <button class="foto-btn" aria-label="Ampliar foto: filhote de cachorro">
+              <img src="../img/pet1.jpg" alt="Filhote de cachorro olhando para a câmera">
+            </button>
+          </li>
+          <li>
+            <button class="foto-btn" aria-label="Ampliar foto: gato deitado">
+              <img src="../img/pet2.jpg" alt="Gato deitado em uma almofada">
+            </button>
+          </li>
+          <li>
+            <button class="foto-btn" aria-label="Ampliar foto: cachorro correndo">
+              <img src="../img/pet3.jpg" alt="Cachorro correndo na grama">
+            </button>
+          </li>
+          <li>
+            <button class="foto-btn" aria-label="Ampliar foto: gatinho">
+              <img src="../img/pet4.jpg" alt="Gatinho de olhos grandes">
+            </button>
+          </li>
+          <li>
+            <button class="foto-btn" aria-label="Ampliar foto: cão adulto">
+              <img src="../img/pet5.jpg" alt="Cão adulto sentado ao ar livre">
+            </button>
+          </li>
+          <li>
+            <button class="foto-btn" aria-label="Ampliar foto: gato na janela">
+              <img src="../img/pet6.jpg" alt="Gato observando pela janela">
+            </button>
+          </li>
+          <li>
+            <button class="foto-btn" aria-label="Ampliar foto: filhotes">
+              <img src="../img/pet7.jpg" alt="Filhotes brincando juntos">
+            </button>
+          </li>
+          <li>
+            <button class="foto-btn" aria-label="Ampliar foto: cachorro feliz">
+              <img src="../img/pet8.jpg" alt="Cachorro feliz com a língua para fora">
+            </button>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Foto ampliada ===== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada" hidden>
+    <button class="lb-fechar" id="lb-fechar" aria-label="Fechar">✕</button>
+    <button class="lb-nav lb-anterior" id="lb-anterior" aria-label="Foto anterior">‹</button>
+    <figure class="lb-figura">
+      <img id="lb-img" src="" alt="">
+      <figcaption id="lb-legenda"></figcaption>
+    </figure>
+    <button class="lb-nav lb-proximo" id="lb-proximo" aria-label="Próxima foto">›</button>
+  </div>
+
+  <!-- ===== Rodapé ===== -->
+  <footer class="rodape">
+    <div class="container">
+      <p>&copy; 2026 PetAmigo. Projeto da disciplina Desenvolvimento Front-End para Web.</p>
+    </div>
+  </footer>
+
+  <script src="../js/galeria.js"></script>
+  <script src="../js/menu.js"></script>
+</body>
+</html>

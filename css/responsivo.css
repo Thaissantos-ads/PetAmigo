@@ -1,0 +1,127 @@
+/* ===== Botão do menu (escondido no computador) ===== */
+.btn-menu {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--branco);
+  font-size: 1.8rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* ===== Tablet (até 900px) ===== */
+@media (max-width: 900px) {
+  .hero-conteudo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mapa-grade {
+    grid-template-columns: 1fr;
+  }
+
+  .mapa-caixa iframe {
+    height: 320px;
+  }
+}
+
+/* ===== Celular (até 800px) ===== */
+@media (max-width: 800px) {
+  section {
+    padding: 40px 0;
+  }
+
+  /* Menu hambúrguer */
+  .btn-menu {
+    display: block;
+  }
+
+  .cabecalho .container {
+    position: relative;
+  }
+
+  .cabecalho nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    background: var(--petroleo-escuro);
+    padding: 8px 20px 16px;
+  }
+
+  .menu.aberto {
+    display: flex;
+  }
+
+  .menu a {
+    display: block;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  /* Textos */
+  .hero {
+    padding: 50px 0;
+  }
+
+  .hero-texto h1 {
+    font-size: 1.9rem;
+  }
+
+  .hero-emoji {
+    font-size: 4rem;
+  }
+
+  .topo-pagina h1 {
+    font-size: 1.7rem;
+  }
+
+  .titulo-secao {
+    font-size: 1.5rem;
+  }
+
+  .hero-botoes .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Cards e galeria em 1 ou 2 colunas */
+  .grade-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .foto-btn img {
+    height: 150px;
+  }
+
+  /* Foto ampliada: botões menores */
+  .lb-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
+  }
+
+  .lb-anterior {
+    left: 6px;
+  }
+
+  .lb-proximo {
+    right: 6px;
+  }
+
+  /* Formulários */
+  .caixa-formulario {
+    padding: 24px 18px;
+  }
+}

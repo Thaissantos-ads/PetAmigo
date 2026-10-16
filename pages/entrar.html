@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre ou crie sua conta no PetAmigo.">
+  <title>Entrar | PetAmigo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsivo.css">
+</head>
+<body>
+
+  <!-- ===== Cabeçalho ===== -->
+  <header class="cabecalho">
+    <div class="container">
+      <a href="../index.html" class="logo" aria-label="PetAmigo - página inicial">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="32" cy="32" r="32" fill="#f28c28"/>
+          <ellipse cx="32" cy="42" rx="12" ry="10" fill="#fff"/>
+          <ellipse cx="17" cy="30" rx="5" ry="7" fill="#fff"/>
+          <ellipse cx="27" cy="20" rx="5" ry="7" fill="#fff"/>
+          <ellipse cx="37" cy="20" rx="5" ry="7" fill="#fff"/>
+          <ellipse cx="47" cy="30" rx="5" ry="7" fill="#fff"/>
+        </svg>
+        <strong>Pet<span>Amigo</span></strong>
+      </a>
+      <button class="btn-menu" id="btn-menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <nav>
+        <ul class="menu">
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="adocao.html">Adoção</a></li>
+          <li><a href="mapa.html">Mapa</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="entrar.html" class="ativo">Entrar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="topo-pagina">
+      <div class="container">
+        <h1>Área do adotante</h1>
+        <p>Entre ou crie sua conta para manifestar interesse em adoção.</p>
+      </div>
+    </section>
+
+    <section class="area-formulario">
+      <div class="container">
+        <div class="card caixa-formulario">
+
+          <!-- Usuário logado -->
+          <div id="area-logado" hidden>
+            <h2 class="titulo-secao" id="saudacao"></h2>
+            <p class="subtitulo-secao">Você está conectado(a). Agora é só escolher seu novo amigo!</p>
+            <a href="adocao.html" class="btn btn-primario btn-largo">Ver animais</a>
+            <button type="button" class="btn btn-sair btn-largo" id="btn-sair">Sair</button>
+          </div>
+
+          <!-- Formulários -->
+          <div id="area-forms">
+            <div class="abas" role="tablist">
+              <button type="button" class="aba ativa" id="aba-entrar" role="tab" aria-selected="true">Entrar</button>
+              <button type="button" class="aba" id="aba-cadastro" role="tab" aria-selected="false">Criar conta</button>
+            </div>
+
+            <!-- Login -->
+            <form id="form-login" novalidate>
+              <div class="campo">
+                <label for="login-email">E-mail</label>
+                <input type="email" id="login-email" placeholder="seuemail@exemplo.com">
+                <small class="erro" id="erro-login-email"></small>
+              </div>
+              <div class="campo">
+                <label for="login-senha">Senha</label>
+                <input type="password" id="login-senha" placeholder="Sua senha">
+                <small class="erro" id="erro-login-senha"></small>
+              </div>
+              <button type="submit" class="btn btn-primario btn-largo">Entrar</button>
+            </form>
+
+            <!-- Cadastro -->
+            <form id="form-cadastro" novalidate hidden>
+              <div class="campo">
+                <label for="cad-nome">Nome completo</label>
+                <input type="text" id="cad-nome" placeholder="Digite seu nome">
+                <small class="erro" id="erro-cad-nome"></small>
+              </div>
+              <div class="campo">
+                <label for="cad-email">E-mail</label>
+                <input type="email" id="cad-email" placeholder="seuemail@exemplo.com">
+                <small class="erro" id="erro-cad-email"></small>
+              </div>
+              <div class="campo">
+                <label for="cad-senha">Senha</label>
+                <input type="password" id="cad-senha" placeholder="Mínimo de 6 caracteres">
+                <small class="erro" id="erro-cad-senha"></small>
+              </div>
+              <div class="campo">
+                <label for="cad-confirmar">Confirmar senha</label>
+                <input type="password" id="cad-confirmar" placeholder="Repita a senha">
+                <small class="erro" id="erro-cad-confirmar"></small>
+              </div>
+              <button type="submit" class="btn btn-primario btn-largo">Criar conta</button>
+            </form>
+
+            <p class="mensagem-sucesso" id="msg-conta" hidden></p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Rodapé ===== -->
+  <footer class="rodape">
+    <div class="container">
+      <p>&copy; 2026 PetAmigo. Projeto da disciplina Desenvolvimento Front-End para Web.</p>
+    </div>
+  </footer>
+
+  <script src="../js/validacao.js"></script>
+  <script src="../js/login.js"></script>
+  <script src="../js/menu.js"></script>
+</body>
+</html>
